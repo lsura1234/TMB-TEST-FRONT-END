@@ -1,0 +1,46 @@
+{
+  "name": "react-template",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "",
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-scripts build",
+    "build:staging": "dotenv -e .env.staging react-scripts build",
+    "test": "react-scripts test",
+    "styleguide": "styleguidist server"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 10",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "axios": "^0.20.0",
+    "dotenv-cli": "^3.2.0",
+    "glud-component": "^1.12.4",
+    "history": "4.10.1",
+    "react": "^16.13.1",
+    "react-dom": "npm:@hot-loader/react-dom@latest",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.3",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-modux": "^2.2.4",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "react-app-rewire-hot-loader": "^2.0.1",
+    "react-app-rewired": "^2.1.5",
+    "react-hot-loader": "^4.12.19",
+    "react-styleguidist": "^11.0.8"
+  }
+}
