@@ -1,0 +1,3 @@
+```js
+<CurrenciesList name='React' />
+```

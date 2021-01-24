@@ -1,9 +1,9 @@
 import { createActionWithFetching } from '../utils'
-import { fetchPostList } from '../api/fetchers'
+import { fetchPostList, fetchCurrenciesList } from '../api/fetchers'
 import post from '../modules/post'
 
 const getPostList = () => {
-  const callAction = async dispatch => {
+  const callAction = async (dispatch) => {
     const params = {}
     const { data } = await fetchPostList(params)
 
@@ -20,5 +20,24 @@ const getPostList = () => {
     callAction
   })
 }
+const getCurrenciesList = () => {
+  const callAction = async (dispatch) => {
+    const params = {}
+    const { data } = await fetchCurrenciesList(params)
 
-export { getPostList }
+    dispatch(
+      post.set({
+        key: 'currencies',
+        value: data.currencies
+      })
+    )
+  }
+
+  return createActionWithFetching({
+    loadingMessage: 'Fetching data..',
+    successMessage: 'Success',
+    callAction
+  })
+}
+
+export { getPostList, getCurrenciesList }
