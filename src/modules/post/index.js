@@ -2,7 +2,8 @@ import { createModule } from 'redux-modux'
 
 const initialState = {
   list: [],
-  currencies: []
+  currencies: {},
+  rates: {}
 }
 
 const setPosts = (state, action) => ({
