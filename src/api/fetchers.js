@@ -4,7 +4,7 @@ import createFetcher from './createFetcher'
 const useMock = false
 
 // daliy key
-const key = 'n4x5MEGTK0tMbKuHXz4rD4RE7BzGq9TSnwik'
+const key = 'XOypLV2ckx61V12YrBXoIJu1YhA4HutASKj2'
 
 const fetchPostList = (params) =>
   createFetcher({
